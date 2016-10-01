@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.landtanin.ui_hw.hw_sol">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/bg"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/center_above_str"
+                    android:textSize="@dimen/center_text_above"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/center_text_below"
+                    android:text="@string/center_below_str"/>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_str"
+            android:textColor="@drawable/selector_home_btn_txt"
+            android:padding="@dimen/btn_padding"
+            android:background="@drawable/selector_home_btn"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <com.landtanin.ui_hw.CustomViewGroup
+            android:id="@+id/viewGroup1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <com.landtanin.ui_hw.CustomViewGroup
+            android:id="@+id/viewGroup2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

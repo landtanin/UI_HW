@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.landtanin.ui_hw.MainActivity"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/bg"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/bottom_str"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bottom_str"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/bottom_margin"
+        android:textAlignment="center"
+        style="@style/TextViewStyle"/>zz
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Skip"
+        android:layout_above="@id/bottom_str"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/above_bottom_text_margin"
+        style="@style/TextViewStyle2"
+        android:id="@+id/skipTxt"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/btn_padding"
+        android:text="@string/btn_str"
+        android:textColor="@drawable/selector_home_btn_txt"
+        android:layout_above="@id/skipTxt"
+        android:layout_marginBottom="@dimen/above_skip_text_margin"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:id="@+id/getStartedBtn"
+        android:background="@drawable/selector_home_btn"
+        />
+
+    <com.landtanin.ui_hw.CustomView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/center_above_str"
+            android:layout_gravity="center_horizontal"
+            android:textSize="@dimen/center_text_above"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/center_below_str"
+            android:textAlignment="center"
+            android:textSize="@dimen/center_text_below"
+            android:layout_gravity="center_horizontal"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

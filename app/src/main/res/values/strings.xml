@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">UI_HW</string>
+    <string name="btn_str">Get Started</string>
+    <string name="bottom_str">By continuing you accept the Term of Use and Privacy Policy</string>
+    <string name="center_above_str">Welcome to Clipzy</string>
+    <string name="center_below_str">Clip anything from over \n100,000 hot topics</string>
+</resources>
