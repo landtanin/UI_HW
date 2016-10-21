@@ -17,6 +17,8 @@
         </activity>
 
         <activity android:name=".hw_sol"/>
+
+
     </application>
 
 </manifest>

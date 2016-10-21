@@ -3,6 +3,7 @@ package com.landtanin.ui_hw;
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Paint;
+import android.os.Parcelable;
 import android.util.AttributeSet;
 import android.view.View;
 
@@ -47,5 +48,13 @@ public class CustomView extends View {
 
     }
 
+    @Override
+    protected Parcelable onSaveInstanceState() {
+        return super.onSaveInstanceState();
+    }
 
+    @Override
+    protected void onRestoreInstanceState(Parcelable state) {
+        super.onRestoreInstanceState(state);
+    }
 }
